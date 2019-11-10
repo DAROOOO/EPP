@@ -1,0 +1,15 @@
+[INFO  2019-09-16 19:23:32 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-09-16 19:23:32 @__init__.py:80] Saving logging to file: neuralgym_logs/20190916192331969469.
+[INFO  2019-09-16 19:23:33 @gpus.py:39] Error reading GPU information, set no GPU.
+[DEBUG 2019-09-16 19:23:37 @requests.py:117] Making request: POST https://oauth2.googleapis.com/token
+[DEBUG 2019-09-16 19:24:12 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-09-16 19:24:12 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-09-16 19:24:12 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-09-16 19:24:12 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-09-16 19:24:12 @PngImagePlugin.py:146] STREAM b'IDAT' 94 16384
+[DEBUG 2019-09-16 19:24:13 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-09-16 19:24:13 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192
+[DEBUG 2019-09-16 19:24:13 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-09-16 19:24:13 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192
+[DEBUG 2019-09-16 19:24:22 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-09-16 19:24:22 @PngImagePlugin.py:146] STREAM b'IDAT' 41 65536

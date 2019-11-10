@@ -1,0 +1,4 @@
+[INFO  2019-11-11 02:01:35 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-11-11 02:01:35 @__init__.py:80] Saving logging to file: neuralgym_logs/20191111020134991040.
+[INFO  2019-11-11 02:01:36 @gpus.py:39] Error reading GPU information, set no GPU.
+[DEBUG 2019-11-11 02:01:39 @requests.py:117] Making request: POST https://oauth2.googleapis.com/token

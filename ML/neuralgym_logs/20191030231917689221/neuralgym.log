@@ -1,0 +1,44 @@
+[INFO  2019-10-30 23:19:17 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-10-30 23:19:17 @__init__.py:80] Saving logging to file: neuralgym_logs/20191030231917689221.
+[INFO  2019-10-30 23:19:19 @gpus.py:39] Error reading GPU information, set no GPU.
+[DEBUG 2019-10-30 23:19:21 @requests.py:117] Making request: POST https://oauth2.googleapis.com/token
+[DEBUG 2019-10-30 23:19:39 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:19:39 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-10-30 23:19:39 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-10-30 23:19:39 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-10-30 23:19:39 @PngImagePlugin.py:146] STREAM b'IDAT' 94 16384
+[DEBUG 2019-10-30 23:20:10 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:20:10 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-10-30 23:20:10 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-10-30 23:20:10 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-10-30 23:20:10 @PngImagePlugin.py:146] STREAM b'IDAT' 94 4936
+[DEBUG 2019-10-30 23:20:11 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:20:11 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-10-30 23:20:11 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-10-30 23:20:11 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-10-30 23:20:11 @PngImagePlugin.py:146] STREAM b'IDAT' 94 16384
+[DEBUG 2019-10-30 23:20:38 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:20:38 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192
+[DEBUG 2019-10-30 23:21:59 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:21:59 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-10-30 23:21:59 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-10-30 23:21:59 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-10-30 23:21:59 @PngImagePlugin.py:146] STREAM b'IDAT' 94 5000
+[DEBUG 2019-10-30 23:22:00 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:22:00 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-10-30 23:22:00 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-10-30 23:22:00 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-10-30 23:22:00 @PngImagePlugin.py:146] STREAM b'IDAT' 94 16384
+[DEBUG 2019-10-30 23:22:19 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:22:19 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'iDOT' 54 28
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:592] b'iDOT' 54 28 (unknown)
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'IDAT' 94 16384
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:23:00 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192
+[DEBUG 2019-10-30 23:23:04 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-10-30 23:23:04 @PngImagePlugin.py:146] STREAM b'IDAT' 41 65536
