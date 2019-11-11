@@ -1,0 +1,30 @@
+[INFO  2019-11-12 00:31:01 @__init__.py:79] Set root logger. Unset logger with neuralgym.unset_logger().
+[INFO  2019-11-12 00:31:01 @__init__.py:80] Saving logging to file: neuralgym_logs/20191112003101443391.
+[INFO  2019-11-12 00:31:03 @gpus.py:39] Error reading GPU information, set no GPU.
+[DEBUG 2019-11-12 00:31:09 @requests.py:117] Making request: POST https://oauth2.googleapis.com/token
+[DEBUG 2019-11-12 00:34:46 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-11-12 00:34:46 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-11-12 00:34:46 @PngImagePlugin.py:146] STREAM b'eXIf' 54 68
+[DEBUG 2019-11-12 00:34:46 @PngImagePlugin.py:146] STREAM b'iDOT' 134 28
+[DEBUG 2019-11-12 00:34:46 @PngImagePlugin.py:592] b'iDOT' 134 28 (unknown)
+[DEBUG 2019-11-12 00:34:46 @PngImagePlugin.py:146] STREAM b'IDAT' 174 16384
+[DEBUG 2019-11-12 00:36:38 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-11-12 00:36:38 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-11-12 00:36:38 @PngImagePlugin.py:146] STREAM b'eXIf' 54 68
+[DEBUG 2019-11-12 00:36:38 @PngImagePlugin.py:146] STREAM b'iDOT' 134 28
+[DEBUG 2019-11-12 00:36:38 @PngImagePlugin.py:592] b'iDOT' 134 28 (unknown)
+[DEBUG 2019-11-12 00:36:38 @PngImagePlugin.py:146] STREAM b'IDAT' 174 16384
+[DEBUG 2019-11-12 00:37:01 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-11-12 00:37:01 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-11-12 00:37:01 @PngImagePlugin.py:146] STREAM b'eXIf' 54 68
+[DEBUG 2019-11-12 00:37:01 @PngImagePlugin.py:146] STREAM b'iDOT' 134 28
+[DEBUG 2019-11-12 00:37:01 @PngImagePlugin.py:592] b'iDOT' 134 28 (unknown)
+[DEBUG 2019-11-12 00:37:01 @PngImagePlugin.py:146] STREAM b'IDAT' 174 4142
+[DEBUG 2019-11-12 00:37:02 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-11-12 00:37:02 @PngImagePlugin.py:146] STREAM b'sRGB' 41 1
+[DEBUG 2019-11-12 00:37:02 @PngImagePlugin.py:146] STREAM b'eXIf' 54 68
+[DEBUG 2019-11-12 00:37:02 @PngImagePlugin.py:146] STREAM b'iDOT' 134 28
+[DEBUG 2019-11-12 00:37:02 @PngImagePlugin.py:592] b'iDOT' 134 28 (unknown)
+[DEBUG 2019-11-12 00:37:02 @PngImagePlugin.py:146] STREAM b'IDAT' 174 16384
+[DEBUG 2019-11-12 00:37:23 @PngImagePlugin.py:146] STREAM b'IHDR' 16 13
+[DEBUG 2019-11-12 00:37:23 @PngImagePlugin.py:146] STREAM b'IDAT' 41 8192

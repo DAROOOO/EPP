@@ -25,6 +25,7 @@
 		F5C858DD2362FEA8003C1617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C858DC2362FEA8003C1617 /* Assets.xcassets */; };
 		F5C858DF2362FF51003C1617 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5C858DE2362FF50003C1617 /* GoogleService-Info.plist */; };
 		F5C8590523630BE4003C1617 /* ViewController + UpDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C8590423630BE4003C1617 /* ViewController + UpDownload.swift */; };
+		F5F6484B2379946A0092BEFE /* ViewController + Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6484A2379946A0092BEFE /* ViewController + Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		F5C858DC2362FEA8003C1617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C858DE2362FF50003C1617 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5C8590423630BE4003C1617 /* ViewController + UpDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + UpDownload.swift"; sourceTree = "<group>"; };
+		F5F6484A2379946A0092BEFE /* ViewController + Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Filter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				F5716D5B22E20EEE0063136A /* ViewController.swift */,
 				F5716D8A22E214670063136A /* ViewController + DrawRect.swift */,
 				F5716D8C22E214850063136A /* ViewController + PickerDelegate.swift */,
+				F5F6484A2379946A0092BEFE /* ViewController + Filter.swift */,
 				F5C8590423630BE4003C1617 /* ViewController + UpDownload.swift */,
 				F516B29B22FDD6760062D2D5 /* ViewController + InpaintHelper.swift */,
 				F516B2A52306F8210062D2D5 /* StayleSelectViewController.swift */,
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F6484B2379946A0092BEFE /* ViewController + Filter.swift in Sources */,
 				F5716D8B22E214670063136A /* ViewController + DrawRect.swift in Sources */,
 				F5716D8F22E42F200063136A /* UIImage + Crop.swift in Sources */,
 				F5716D5C22E20EEE0063136A /* ViewController.swift in Sources */,

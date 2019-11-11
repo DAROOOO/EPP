@@ -20,6 +20,7 @@ class ViewController: UIViewController{
     //var tr_pushTransition: TRNavgationTransitionDelegate?
     //var tr_presentTransition: TRViewControllerTransitionDelegate?
     
+    @IBOutlet weak var FilterButtonView: UIView!
     @IBOutlet weak var InpaintButtonView: UIView!
     @IBOutlet weak var MainButtonView: UIView!
     @IBOutlet weak var PaintButtonView: UIView!
@@ -43,6 +44,12 @@ class ViewController: UIViewController{
     @IBOutlet weak var DetectButton: UIButton!
     @IBOutlet weak var PaintButton: UIButton!
     @IBOutlet weak var mergeButton: UIButton!
+    @IBOutlet weak var BrightButton: UIButton!
+    @IBOutlet weak var ContrastButton: UIButton!
+    @IBOutlet weak var cplusbutton: UIButton!
+    @IBOutlet weak var cminusbutton: UIButton!
+    @IBOutlet weak var bplusbutton: UIButton!
+    @IBOutlet weak var bminusbutton: UIButton!
     
     @IBAction func InpaintExitTapped(_ sender: Any) {
         //InpaintToolBar.isHidden = true
@@ -59,6 +66,12 @@ class ViewController: UIViewController{
         DetectButton.isHidden = true
         ImageView.isHidden = true
         SpaceButton.isHidden = false
+        FilterButtonView.isHidden = true
+        BrightButton.tintColor = UIColor.white
+        cnt4 = false
+        ContrastButton.tintColor = UIColor.white
+        cnt3 = false
+        ciimg = nil
         
         isdrawing = false
         iscustomdraw = false
@@ -71,6 +84,65 @@ class ViewController: UIViewController{
         scale = 1.0
         super.viewWillDisappear(true)
         self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    @IBAction func ContractTapped(_ sender: Any) {
+        
+        if cnt3 == false{
+            UIView.transition(with: MainView, duration: 0.5, options: .transitionCrossDissolve,
+            animations: {
+               self.FilterButtonView.isHidden = false
+               // 에니메이션 적용할 메소드 작성
+            }, completion:nil)
+            ContrastButton.tintColor = UIColor.gray
+            cplusbutton.isHidden = false
+            cminusbutton.isHidden = false
+            bplusbutton.isHidden = true
+            bminusbutton.isHidden = true
+            cnt3 = true
+        }
+        else{
+            FilterButtonView.isHidden = true
+            ContrastButton.tintColor = UIColor.white
+            cnt3 = false
+        }
+    }
+    @IBAction func BrightTapped(_ sender: Any) {
+        if cnt4 == false{
+            UIView.transition(with: MainView, duration: 0.5, options: .transitionCrossDissolve,
+            animations: {
+               self.FilterButtonView.isHidden = false
+               // 에니메이션 적용할 메소드 작성
+            }, completion:nil)
+//            FilterButtonView.isHidden = false
+            BrightButton.tintColor = UIColor.gray
+            cplusbutton.isHidden = true
+            cminusbutton.isHidden = true
+            bplusbutton.isHidden = false
+            bminusbutton.isHidden = false
+            cnt4 = true
+        }
+        else{
+            FilterButtonView.isHidden = true
+            BrightButton.tintColor = UIColor.white
+            cnt4 = false
+        }
+    }
+    @IBAction func ContrastPlus(_ sender: Any) {
+        ContrastValue += CGFloat(0.05)
+        ContrastControll(ContrastValue)
+    }
+    @IBAction func Contrastminus(_ sender: Any) {
+        ContrastValue -= CGFloat(0.05)
+        ContrastControll(ContrastValue)
+    }
+    @IBAction func BrightPlus(_ sender: Any) {
+        BrightValue += CGFloat(0.05)
+        BrightControll(BrightValue)
+    }
+    @IBAction func Brightminus(_ sender: Any) {
+        BrightValue -= CGFloat(0.05)
+        BrightControll(BrightValue)
     }
     
     // 그림 그리기 on/off 버튼
@@ -268,6 +340,7 @@ class ViewController: UIViewController{
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EditSelectViewController") as! EditSelectViewController
         vc.title = "EditView"
         navigationController?.pushViewController(vc, animated: true)
+        ciimg = CIImage(image: SourceView.image!)!
     }
     
     @IBAction func HelpButtonTapped(_ sender: Any) {
@@ -285,10 +358,11 @@ class ViewController: UIViewController{
         MainView.transform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0)
         scale = 1.0
         
-        let newImage = UIImage(cgImage: SourceView.image!.cgImage!, scale: SourceView.image!.scale, orientation: .down)
+//        let newImage = UIImage(cgImage: SourceView.image!.cgImage!, scale: SourceView.image!.scale, orientation: .down)
         
         //사진 방향 체크
-        print(newImage.imageOrientation)
+//        print(newImage.imageOrientation)
+        
     }
     
     @IBAction func SVPinchAction(_ pinch: UIPinchGestureRecognizer) {
@@ -299,14 +373,14 @@ class ViewController: UIViewController{
         switch(state){
         case.ended:
             fitratio()
-            print("스케일!")
-            print(scale)
-            print("프레임사이즈")
-            print(SourceView.frame.size)
-            print("바운드사이즈")
-            print(SourceView.bounds)
-            print("이미지사이즈")
-            print(SourceView.image!.size)
+//            print("스케일!")
+//            print(scale)
+//            print("프레임사이즈")
+//            print(SourceView.frame.size)
+//            print("바운드사이즈")
+//            print(SourceView.bounds)
+//            print("이미지사이즈")
+//            print(SourceView.image!.size)
             MainView.transform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0)
         case .possible:
             print("")
@@ -341,8 +415,8 @@ class ViewController: UIViewController{
         case .changed:
             SourceView.center = CGPoint(x: SourceView.center.x + (transition.x), y: SourceView.center.y + (transition.y))
             print(transition.x * scale)
-            print("스케일!")
-            print(scale)
+//            print("스케일!")
+//            print(scale)
         case .cancelled:
             print("")
         case .failed:
@@ -378,6 +452,10 @@ class ViewController: UIViewController{
     var cnt1 = false
     //paint버튼 상태
     var cnt2 = false
+    //contract버튼 상태
+    var cnt3 = false
+    //bright버튼 상태
+    var cnt4 = false
     
     var InpImgs = InpaintImgStruct()
     var FirstImage = UIImage()
@@ -388,9 +466,14 @@ class ViewController: UIViewController{
     var m_croppoint: CGPoint!
     var m_cropsiz: CGSize!
     
+    var ciimg: CIImage!
+    var ContrastValue: CGFloat = CGFloat(0.05)
+    var BrightValue: CGFloat = CGFloat(0.05)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // ** INIT ** //
         ImageView.isHidden = true
@@ -404,7 +487,7 @@ class ViewController: UIViewController{
         InpaintButton.isHidden = true
         DetectButton.isHidden = true
         InpaintExitButton.isHidden = true
-
+        FilterButtonView.isHidden = true
         
         isdrawing = false
         SourceView.isUserInteractionEnabled = true
@@ -434,12 +517,17 @@ class ViewController: UIViewController{
         let detectimg = UIImage(named: "Detectimg")?.withRenderingMode(.alwaysTemplate)
         DetectButton.setImage(detectimg, for: .normal)
         
-        
         let pencilimg = UIImage(named: "pencil")?.withRenderingMode(.alwaysTemplate)
         PaintButton.setImage(pencilimg, for: .normal)
         
         let mergeimg = UIImage(named: "mergeimg")?.withRenderingMode(.alwaysTemplate)
         mergeButton.setImage(mergeimg, for: .normal)
+        
+        let contrastimg = UIImage(named: "contrastimg")?.withRenderingMode(.alwaysTemplate)
+        ContrastButton.setImage(contrastimg, for: .normal)
+        
+        let brightimg = UIImage(named: "brightimg")?.withRenderingMode(.alwaysTemplate)
+        BrightButton.setImage(brightimg, for: .normal)
         
     }
 
@@ -541,8 +629,5 @@ class ViewController: UIViewController{
         let blue = CGFloat(rgbValue & 0xFF)/256.0
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
-    
-    
-    
     
 }

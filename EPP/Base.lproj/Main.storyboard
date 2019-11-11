@@ -196,12 +196,47 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZc-uf-igZ">
-                                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                        <rect key="frame" x="25" y="15" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="PaintButtonTapped:" destination="LGb-np-9nP" eventType="touchUpInside" id="38Z-gF-NkN"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T28-51-T0A">
+                                        <rect key="frame" x="167" y="15" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="ContractTapped:" destination="LGb-np-9nP" eventType="touchUpInside" id="efS-MT-aPe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGw-kK-lLe">
+                                        <rect key="frame" x="310" y="15" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="BrightTapped:" destination="LGb-np-9nP" eventType="touchUpInside" id="RwF-Xp-FFD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="paint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgx-Pm-xsh">
+                                        <rect key="frame" x="22" y="55" width="47" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="contrast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ4-kx-5tN">
+                                        <rect key="frame" x="164" y="55" width="47" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bright" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07x-wu-yzC">
+                                        <rect key="frame" x="307" y="55" width="47" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +248,46 @@
                                     <action selector="mergeButtonTapped:" destination="LGb-np-9nP" eventType="touchUpInside" id="2y0-dy-Opd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGM-OW-fxe">
+                                <rect key="frame" x="131" y="534" width="113" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-co-Dmt">
+                                        <rect key="frame" x="10" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="cplus" image="icons8-plus-64 (1)"/>
+                                        <connections>
+                                            <action selector="ContrastPlus:" destination="LGb-np-9nP" eventType="touchUpInside" id="Ni7-0c-eEc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-sb-JVl">
+                                        <rect key="frame" x="70" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="cminus" image="icons8-minus-64 (1)"/>
+                                        <connections>
+                                            <action selector="Contrastminus:" destination="LGb-np-9nP" eventType="touchUpInside" id="gnE-in-4YV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcq-hL-vVi">
+                                        <rect key="frame" x="10" y="5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="bplus" image="icons8-plus-64 (1)"/>
+                                        <connections>
+                                            <action selector="BrightPlus:" destination="LGb-np-9nP" eventType="touchUpInside" id="nBi-g6-l9p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fT-xv-VXL">
+                                        <rect key="frame" x="70" y="4" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="bminus" image="icons8-minus-64 (1)"/>
+                                        <connections>
+                                            <action selector="Brightminus:" destination="LGb-np-9nP" eventType="touchUpInside" id="diH-9s-3eh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -223,8 +298,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="OVi-PK-ePh"/>
                     <connections>
+                        <outlet property="BrightButton" destination="gGw-kK-lLe" id="cxj-kT-3iq"/>
+                        <outlet property="ContrastButton" destination="T28-51-T0A" id="cZf-Y3-3aG"/>
                         <outlet property="CropButton" destination="aI3-ec-MUa" id="AE2-v2-2Lh"/>
                         <outlet property="DetectButton" destination="EWv-WA-UZG" id="L51-zT-9dP"/>
+                        <outlet property="FilterButtonView" destination="OGM-OW-fxe" id="Dt0-Gh-op8"/>
                         <outlet property="ImageView" destination="xa8-wP-mRc" id="S33-lX-hBE"/>
                         <outlet property="InpaintButton" destination="oSF-MN-GhU" id="RMg-Gj-jOA"/>
                         <outlet property="InpaintButtonView" destination="mqO-bi-vXQ" id="OMs-O4-VnK"/>
@@ -241,6 +319,10 @@
                         <outlet property="RevertButton" destination="jaJ-OK-7Do" id="YKe-rz-AVB"/>
                         <outlet property="SourceView" destination="T7Z-du-xSw" id="gGJ-P7-XGX"/>
                         <outlet property="SpaceButton" destination="9tG-D7-0x8" id="J5o-iK-fVR"/>
+                        <outlet property="bminusbutton" destination="7fT-xv-VXL" id="BH1-l5-BLP"/>
+                        <outlet property="bplusbutton" destination="xcq-hL-vVi" id="hdw-SI-7AM"/>
+                        <outlet property="cminusbutton" destination="eCs-sb-JVl" id="PWK-VV-fbh"/>
+                        <outlet property="cplusbutton" destination="Vko-co-Dmt" id="gXp-Bd-If2"/>
                         <outlet property="mergeButton" destination="AqQ-dq-QUd" id="RZA-1k-EVb"/>
                     </connections>
                 </viewController>
@@ -445,6 +527,8 @@
         <image name="Reverimg" width="80" height="90"/>
         <image name="back" width="50" height="50"/>
         <image name="icons8-enlarge-20" width="25" height="25"/>
+        <image name="icons8-minus-64 (1)" width="64" height="64"/>
+        <image name="icons8-plus-64 (1)" width="64" height="64"/>
         <image name="icons8-xbox-x-90" width="90" height="90"/>
         <image name="inpaintEditimg-1" width="379" height="58"/>
         <image name="inpaintimg" width="80" height="90"/>

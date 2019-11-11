@@ -49,10 +49,7 @@ class EditSelectViewController: UIViewController{
         rootView.InpaintExitButton.isHidden = false
         rootView.MainView.backgroundColor = rootView.UIColorFromHex(rgbValue: 0x6D676E)
         rootView.SpaceButton.isHidden = true
-        
-        rootView.iscustomdraw = true
-        rootView.SourceView.isUserInteractionEnabled = false
-        rootView.MainView.isMultipleTouchEnabled = false
+    
         rootView.PaintButtonView.isHidden = false
         navigationController?.popViewController(animated: true)
     }
