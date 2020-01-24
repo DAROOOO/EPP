@@ -52,7 +52,7 @@ fileRef.putData(data, metadata){
     // data task
 }
 ```
-사진?
+
 * 딥러닝 관련
 
 ***Inpaint***
